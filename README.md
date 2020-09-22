@@ -22,77 +22,8 @@ ng serve --open
 ```
 
 ### 8) [hero.service.ts](https://raw.githubusercontent.com/dhananjay431/AngularAndCordysConnectivity/master/hero.service.ts) -> Copy and Paste -> src\app\
-```js
-import { Injectable } from '@angular/core';
-import { environment } from '../environments/environment';
-declare var $:any;
-@Injectable({
-  providedIn: 'root'
-})
-export class HeroService {
-
-  ajax(method,namespace,parameters){
-    if(environment.production == true){
-      return new Promise((rev,rej)=>{
-        $.cordys.ajax({
-          method:method,
-          timeout:environment.timeout,
-          namespace:namespace,
-          dataType: "* json",
-          parameters: parameters,
-          success: function success(resp) {
-             rev(resp);
-          },
-          error:function error(e1,e2,e3){
-             rej([e1,e2,e3]);
-          }
-        })
-      })
-    }else{
-      return new Promise((rev,rej)=>{
-        $.cordys.ngajax({
-          method:method,
-          timeout:environment.timeout,
-          namespace:namespace,
-          dataType: "* json",
-          parameters: parameters,
-          success: function success(resp) {
-            rev(resp);
-         },
-         error:function error(e1,e2,e3){
-            rej([e1,e2,e3]);
-         }
-        })
-      })
-    }
-  }
-
-}
-```
 ### 9) Create [proxy.conf.json](https://raw.githubusercontent.com/dhananjay431/AngularAndCordysConnectivity/master/proxy.conf.json) -> \proxy.conf.json
-```json
-{
-    "/com.eibus.web.soap.Gateway.wcp": {
-        "target": "https://{IP}/{PATH}",
-        "secure": false,
-        "logLevel": "debug",
-        "changeOrigin": false
-    },
-    "/com.eibus.sso.web.authentication.PreLoginInfo.wcp": {
-        "target": "https://{IP}/{PATH}/",
-        "secure": false,
-        "logLevel": "debug",
-        "changeOrigin": false
-    },
-    "/cordys/": {
-        "target": "https://{IP}/",
-        "secure": false,
-        "logLevel": "debug",
-        "changeOrigin": false
-    }
-}
 
-```
 ### 9) -1) package.json add 
 ```json
  "scripts": {
