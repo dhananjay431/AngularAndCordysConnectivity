@@ -17,7 +17,7 @@ ng serve --open
 ```json
  "scripts": [
           "src/assets/js/jquery-3.5.1.min.js",
-          "src/assets/js/cordys.html5sdk.js",
+          "src/assets/js/cordys.html5sdk.js"
  ]
 ```
 
@@ -69,7 +69,7 @@ export class HeroService {
 
 }
 ```
-### 9) Create proxy.conf.json(https://raw.githubusercontent.com/dhananjay431/AngularAndCordysConnectivity/master/proxy.conf.json) -> \proxy.conf.json
+### 9) Create [proxy.conf.json](https://raw.githubusercontent.com/dhananjay431/AngularAndCordysConnectivity/master/proxy.conf.json) -> \proxy.conf.json
 ```json
 {
     "/com.eibus.web.soap.Gateway.wcp": {
@@ -93,6 +93,13 @@ export class HeroService {
 }
 
 ```
+### 9) -1) package.json add 
+```json
+ "scripts": {
+     "start": "ng serve --proxy-config proxy.conf.json"
+ }
+```
+
 ### 10) Sample Code For Login 
 ```ts
 deleteAllCookies() {
