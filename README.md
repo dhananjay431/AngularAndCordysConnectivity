@@ -21,7 +21,7 @@ ng serve --open
  ]
 ```
 
-### 8) hero.service.ts -> Copy and Paste -> src\app\
+### 8) [hero.service.ts](https://raw.githubusercontent.com/dhananjay431/AngularAndCordysConnectivity/master/hero.service.ts) -> Copy and Paste -> src\app\
 ```js
 import { Injectable } from '@angular/core';
 import { environment } from '../environments/environment';
@@ -69,7 +69,7 @@ export class HeroService {
 
 }
 ```
-### 9) Create proxy.conf.json -> \proxy.conf.json
+### 9) Create proxy.conf.json(https://raw.githubusercontent.com/dhananjay431/AngularAndCordysConnectivity/master/proxy.conf.json) -> \proxy.conf.json
 ```json
 {
     "/com.eibus.web.soap.Gateway.wcp": {

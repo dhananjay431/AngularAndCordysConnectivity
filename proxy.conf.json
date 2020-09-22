@@ -1,0 +1,20 @@
+{
+    "/com.eibus.web.soap.Gateway.wcp": {
+        "target": "https://{IP}/{PATH}",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin": false
+    },
+    "/com.eibus.sso.web.authentication.PreLoginInfo.wcp": {
+        "target": "https://{IP}/{PATH}/",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin": false
+    },
+    "/cordys/": {
+        "target": "https://{IP}/",
+        "secure": false,
+        "logLevel": "debug",
+        "changeOrigin": false
+    }
+}
