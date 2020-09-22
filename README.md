@@ -11,8 +11,8 @@ cd my-app
 ng serve --open
 ```
 ### 4) Create Folder (src\assets\js)
-### 5) jquery-3.5.1.min.js  -> copy and paste -> src\assets\js
-### 6) cordys.html5sdk.js -> copy and paste -> src\assets\js
+### 5) [jquery-3.5.1.min.js](https://raw.githubusercontent.com/dhananjay431/AngularAndCordysConnectivity/master/jquery-3.5.1.min.js)  -> copy and paste -> src\assets\js
+### 6) [cordys.html5sdk.js](https://raw.githubusercontent.com/dhananjay431/AngularAndCordysConnectivity/master/cordys.html5sdk.js) -> copy and paste -> src\assets\js
 ### 7) Open angular.json and Add 
 ```json
  "scripts": [
