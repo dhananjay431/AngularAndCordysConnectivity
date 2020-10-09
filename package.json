@@ -1,0 +1,22 @@
+{
+  "name": "angularandcordysconnectivity",
+  "version": "1.0.1",
+  "description": "># Angular And Cordys Connectivity\r ### 1) [NodeJs Download And Install](https://nodejs.org/en/download/)\r ### 2) [Angular Cli Install](https://cli.angular.io/) \r ```bash\r npm install -g @angular/cli\r ```\r ### 3) Create new App \r ```bash\r ng new my-app\r cd my-app\r ng serve --open\r ```\r ### 4) Create Folder (src\\assets\\js)\r ### 5) [jquery-3.5.1.min.js](https://raw.githubusercontent.com/dhananjay431/AngularAndCordysConnectivity/master/jquery-3.5.1.min.js)  -> copy and paste -> src\\assets\\js\r ### 6) [cordys.html5sdk.js](https://raw.githubusercontent.com/dhananjay431/AngularAndCordysConnectivity/master/cordys.html5sdk.js) -> copy and paste -> src\\assets\\js\r ### 7) Open angular.json and Add \r ```json\r  \"scripts\": [\r           \"src/assets/js/jquery-3.5.1.min.js\",\r           \"src/assets/js/cordys.html5sdk.js\"\r  ]\r ```",
+  "main": "cordys.html5sdk.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhananjay431/AngularAndCordysConnectivity.git"
+  },
+  "keywords": [
+    "Cordys"
+  ],
+  "author": "Dhananjay (dbel431@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhananjay431/AngularAndCordysConnectivity/issues"
+  },
+  "homepage": "https://github.com/dhananjay431/AngularAndCordysConnectivity#readme"
+}
